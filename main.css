@@ -1,0 +1,46 @@
+.bodied {
+  background-color: #111;
+  display: grid;
+  font-size: 16px;
+  height: 100vh;
+  place-items: center;
+}
+
+@keyframes clickflip {
+  15% {
+    transform-origin: bottom left;
+    transform: rotateZ(-20deg) translateX(-0.5rem) translateY(0) rotateX(0);
+    background-color: black;
+  }
+  50% {
+    transform-origin: center;
+    transform: rotateZ(-10deg) translateX(0) translateY(-100%) rotateX(0.5turn);
+  }
+  75% {
+    transform-origin: center;
+    transform: rotateZ(0) translateX(0) translateY(-100%) rotateX(0);
+  }
+  100% {
+    transform: rotateZ(0) translateX(0) translateY(0) rotateX(0);
+    background-color: black;
+  }
+}
+
+.click {
+  border: 1px solid aquamarine;
+  border-radius: 50px;
+  background-color: black;
+  color: #faf;
+  font-size: 3rem;
+  margin: auto;
+  padding: 4px 16px;
+  place-self: center;
+  white-space: nowrap;
+}
+
+.click:hover { 
+  cursor: alias;
+}
+.flip {
+  animation: clickflip 0.5s linear;
+}
