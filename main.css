@@ -9,8 +9,7 @@
 @keyframes clickflip {
   15% {
     transform-origin: bottom left;
-    transform: rotateZ(-20deg) translateX(-0.5rem) translateY(0) rotateX(0);
-    background-color: black;
+    transform: rotateZ(-20deg) translateX(-0.5rem);
   }
   50% {
     transform-origin: center;
@@ -18,11 +17,10 @@
   }
   75% {
     transform-origin: center;
-    transform: rotateZ(0) translateX(0) translateY(-100%) rotateX(0);
+    transform: rotateZ(0) translateY(-100%) rotateX(0);
   }
   100% {
-    transform: rotateZ(0) translateX(0) translateY(0) rotateX(0);
-    background-color: black;
+    transform: translateY(0);
   }
 }
 
